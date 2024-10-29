@@ -1,8 +1,16 @@
 //Strings o cadenas de texto
-const producto = 'Monitor de 24"';
+const tweet = 'Aprendiendo JavaScript con el curso de Desarrollo Web Completo';
 const producto2 = String("Monitor de 19\"");
-const producto3 = new String('Monitor de 50 pulgadas');
+const correo = 'correo@correo';
 
-console.log(producto);
+console.log(tweet.length);
 console.log(producto2);
-console.log(producto3);
+
+//IndexOf (retorna la posición de la primera coincidencia)
+console.log(tweet.indexOf('JavaScript'));
+console.log(producto2.indexOf('Tablet'));
+
+//Includes (retorna true o false si encuentra la palabra)'
+console.log(tweet.includes('JavaScript'));
+console.log(producto2.includes('Tablet'));
+console.log(correo.includes('@'));
