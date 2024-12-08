@@ -8,7 +8,7 @@ class Producto {
     }
 
     mostrarInfo() {
-        console.log(`El producto: ${this.nombre} tiene un precio de: ${this.precio}`);
+        return `El producto: ${this.nombre} tiene un precio de: ${this.precio}`;
     }
 
     disponibilidad() {
@@ -22,6 +22,21 @@ const producto3 = new Producto('Teclado', 50, false);
 console.log(producto2);
 console.log(producto3);
 
-producto2.mostrarInfo();
-producto3.mostrarInfo();
+console.log(producto2.mostrarInfo());
+console.log(producto3.mostrarInfo());
 console.log(producto2.disponibilidad());
+
+class Libro extends Producto {
+    constructor(nombre, autor, precio, year) {
+        super(nombre, precio);
+        this.autor = autor;
+        this.year = year;
+    }
+
+    mostrarInfo() {
+        return `${super.mostrarInfo()} y fue escrito por ${this.autor} en el año ${this.year}`;
+    }
+}
+
+const libro = new Libro('JavaScript la Revolución', 'Juanito', 20, 2024);
+console.log(libro.mostrarInfo());
