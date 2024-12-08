@@ -27,3 +27,11 @@ const producto3 = new Producto('Teclado', 50, false);
 producto3.mostrarInfo();
 const producto4 = new Producto('Mouse gamer', 20);
 producto4.mostrarInfo();
+
+// Agregar un prototype a la clase
+Producto.prototype.disponibilidad = function() {
+    return this.disponible ? `El ${this.nombre} esta disponible.` : `El ${this.nombre} no esta disponible.`;
+}
+
+console.log(producto2.disponibilidad());
+console.log(producto2);
