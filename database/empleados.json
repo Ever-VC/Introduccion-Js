@@ -1,0 +1,40 @@
+{
+    "empleados": [
+        {
+            "id": 1,
+            "nombre": "Ever",
+            "apellido": "Vasquez",
+            "edad": 30,
+            "email": "ever.vasquez@gmai.com",
+            "telefono": "1234567890",
+            "puesto": "Desarrollador"
+        },
+        {
+            "id": 2,
+            "nombre": "Juan",
+            "apellido": "Perez",
+            "edad": 25,
+            "email": "juan.perez@gmail.com",
+            "telefono": "0987654321",
+            "puesto": "Diseñador"
+        },
+        {
+            "id": 3,
+            "nombre": "Maria",
+            "apellido": "Gonzalez",
+            "edad": 35,
+            "email": "maria.gonzales@hotmail.com",
+            "telefono": "1234567890",
+            "puesto": "Gerente"
+        },
+        {
+            "id": 4,
+            "nombre": "Pedro",
+            "apellido": "Rodriguez",
+            "edad": 40,
+            "email": "pedro.rodriguez@gmail.com",
+            "telefono": "0987654321",
+            "puesto": "UX / UI"
+        }
+    ]
+}
